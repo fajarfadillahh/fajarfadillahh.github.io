@@ -19,12 +19,14 @@ header {
   align-items: center;
   padding: 20px 5%;
   position: fixed;
+  transition: 0.3s;
 
   a {
     text-decoration: none;
     font-size: 18px;
     color: #000;
     font-weight: bold;
+    transition: 0.3s;
 
     span {
       padding: 5px 10px;
@@ -43,6 +45,21 @@ header {
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
+    transition: 0.3s;
+  }
+}
+
+// sticky navbar
+header.sticky {
+  background: rgba(254, 84, 68, 0.805);
+
+  a {
+    color: $white;
+  }
+
+  span,
+  button {
+    background: #a0505a;
   }
 }
 
