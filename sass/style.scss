@@ -1,3 +1,9 @@
+// variabels
+$white: #fff;
+$yellow: #ffcf2d;
+$orange: #fe5244;
+$grey: #424242;
+
 * {
   padding: 0;
   margin: 0;
@@ -7,10 +13,12 @@
 
 // navbar
 header {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 5%;
+  position: fixed;
 
   a {
     text-decoration: none;
@@ -20,19 +28,66 @@ header {
 
     span {
       padding: 5px 10px;
-      color: #fff;
+      color: $white;
       border-radius: 20px;
-      background: #ffcf2d;
+      background: $orange;
     }
   }
 
   button {
     padding: 5px 15px;
     border: none;
-    color: #fff;
-    background: #ffcf2d;
+    color: $white;
+    background: $orange;
     border-radius: 20px;
     font-size: 18px;
     font-weight: bold;
+    cursor: pointer;
+  }
+}
+
+// hero
+.hero {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .hero__text {
+    width: 50%;
+    padding: 0 5%;
+
+    h1 {
+      font-size: 35px;
+      margin-bottom: 20px;
+
+      span {
+        color: $orange;
+      }
+    }
+
+    p {
+      font-size: 18px;
+      font-weight: 300;
+      margin-bottom: 40px;
+      line-height: 30px;
+      color: $grey;
+    }
+
+    button {
+      padding: 15px 25px;
+      border: none;
+      color: #fff;
+      background: #fe5244;
+      border-radius: 30px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+
+  .hero__img {
+    width: 50%;
   }
 }
