@@ -1,8 +1,9 @@
 // variabels
 $white: #fff;
-$yellow: #ffcf2d;
-$orange: #fe5244;
-$grey: #424242;
+$yellow: #ffd200;
+$grey: rgba(114, 113, 113, 0.8);
+$blue: #68e1fd;
+$dark: #393e46;
 
 * {
   padding: 0;
@@ -24,7 +25,7 @@ header {
   a {
     text-decoration: none;
     font-size: 18px;
-    color: #000;
+    color: $white;
     font-weight: bold;
     transition: 0.3s;
 
@@ -32,7 +33,8 @@ header {
       padding: 5px 10px;
       color: $white;
       border-radius: 20px;
-      background: $orange;
+      background: $yellow;
+      transition: 0.3s;
     }
   }
 
@@ -40,7 +42,7 @@ header {
     padding: 5px 15px;
     border: none;
     color: $white;
-    background: $orange;
+    background: $yellow;
     border-radius: 20px;
     font-size: 18px;
     font-weight: bold;
@@ -51,15 +53,10 @@ header {
 
 // sticky navbar
 header.sticky {
-  background: rgba(254, 84, 68, 0.805);
+  background: rgba(57, 62, 70, 0.97);
 
   a {
     color: $white;
-  }
-
-  span,
-  button {
-    background: #a0505a;
   }
 }
 
@@ -70,6 +67,7 @@ header.sticky {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #393e46;
 
   .hero__text {
     width: 50%;
@@ -78,9 +76,10 @@ header.sticky {
     h1 {
       font-size: 35px;
       margin-bottom: 20px;
+      color: $white;
 
       span {
-        color: $orange;
+        color: $yellow;
       }
     }
 
@@ -89,14 +88,14 @@ header.sticky {
       font-weight: 300;
       margin-bottom: 40px;
       line-height: 30px;
-      color: $grey;
+      color: $white;
     }
 
     button {
       padding: 15px 25px;
       border: none;
-      color: #fff;
-      background: #fe5244;
+      color: $white;
+      background: $yellow;
       border-radius: 30px;
       font-size: 18px;
       font-weight: bold;
@@ -142,7 +141,7 @@ header.sticky {
       transition: 0.3s;
 
       &:hover {
-        background: $orange;
+        background: $yellow;
 
         i,
         h3,
@@ -154,7 +153,7 @@ header.sticky {
       i {
         font-size: 36px;
         margin-bottom: 50px;
-        color: $orange;
+        color: $yellow;
         border-radius: 50%;
       }
 
