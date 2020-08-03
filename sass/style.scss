@@ -2,8 +2,10 @@
 $white: #fff;
 $yellow: #ffd200;
 $grey: rgba(114, 113, 113, 0.7);
+$lightGrey: #e6e6e6;
 $lightBlue: #68e1fd;
 $mediumBlue: #4d53a3;
+$darkBlue: #24285b;
 $dark: #393e46;
 
 * {
@@ -82,7 +84,7 @@ header.sticky {
     padding: 0 5%;
 
     h1 {
-      font-size: 35px;
+      font-size: 40px;
       margin-bottom: 20px;
       color: $white;
 
@@ -111,7 +113,7 @@ header.sticky {
       transition: 0.3s;
 
       &:hover {
-        background: #e9bf04;
+        background: #cca809;
       }
     }
   }
@@ -133,7 +135,7 @@ header.sticky {
     margin-top: 50px;
 
     h1 {
-      font-size: 35px;
+      font-size: 40px;
       margin-bottom: 20px;
     }
 
@@ -204,7 +206,7 @@ header.sticky {
 
     h1 {
       color: $yellow;
-      font-size: 35px;
+      font-size: 40px;
       margin-bottom: 20px;
     }
 
@@ -228,7 +230,56 @@ header.sticky {
       transition: 0.3s;
 
       &:hover {
-        background: #2e3377;
+        background: #24285b;
+      }
+    }
+  }
+}
+
+// team
+.team {
+  width: 100%;
+  height: 70vh;
+  padding: 20px 5%;
+  background: $darkBlue;
+
+  .team__tittle {
+    text-align: center;
+    margin-top: 50px;
+
+    h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+      color: $yellow;
+    }
+
+    p {
+      font-size: 18px;
+      color: $white;
+    }
+  }
+
+  .team__container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+
+    .team__person {
+      text-align: center;
+
+      img {
+        width: 7em;
+        border-radius: 50%;
+      }
+
+      h3 {
+        font-size: 24px;
+        color: $yellow;
+      }
+
+      p {
+        color: $white;
+        font-size: 15px;
       }
     }
   }
