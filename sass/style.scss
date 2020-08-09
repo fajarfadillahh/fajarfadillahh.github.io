@@ -37,21 +37,6 @@ header {
     }
   }
 
-  ul {
-    list-style: none;
-    display: flex;
-
-    li {
-      font-weight: normal;
-      margin: 0 20px;
-      color: $white;
-
-      &:hover {
-        color: $yellow;
-      }
-    }
-  }
-
   button {
     padding: 5px 15px;
     border: none;
